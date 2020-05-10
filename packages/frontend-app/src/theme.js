@@ -1,22 +1,27 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import red from '@material-ui/core/colors/red';
-
+import { createMuiTheme } from "@material-ui/core/styles";
+import red from "@material-ui/core/colors/red";
+import { grey } from "@material-ui/core/colors";
 const serifFont = {
-  fontFamily: 'Source Serif Pro'
+  fontFamily: "Source Serif Pro",
 };
 
 // Material Theme
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#000'
+      main: "#000",
     },
+    text: {
+      primary: grey[50],
+      secondary: grey[900]
+    },
+
     error: {
-      main: red.A400
+      main: red.A400,
     },
     background: {
-      default: '#fff'
-    }
+      default: "#fff",
+    },
   },
   typography: {
     h1: serifFont,
@@ -26,10 +31,10 @@ const theme = createMuiTheme({
     h5: serifFont,
     h6: serifFont,
     button: {
-      textTransform: 'none'
-    }
+      textTransform: "none",
+    },
   },
-  overrides: {}
+  overrides: {},
 });
 
 if (theme.overrides) {
@@ -37,8 +42,8 @@ if (theme.overrides) {
     containedPrimary: {
       paddingLeft: theme.spacing(4),
       paddingRight: theme.spacing(4),
-      minWidth: 200
-    }
+      minWidth: 200,
+    },
   };
 }
 
