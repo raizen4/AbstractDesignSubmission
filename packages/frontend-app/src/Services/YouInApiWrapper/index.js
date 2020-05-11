@@ -2,13 +2,12 @@ import Axios from "axios";
 
 export const resetPassword = async (token, newPass) => {
   try {
-    const data = { psw: newPass };
     const params = new URLSearchParams();
     params.append("psw", newPass);
 
     const res = await Axios.post(
       `https://www.abstpswractmrm.net/youin/api/password/${token}`,
-      stringifiedData,
+      params,
       {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
