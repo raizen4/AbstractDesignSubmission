@@ -1,6 +1,6 @@
 # abstractDesignSubmission- PLEASE READ
 
-#Notes
+# Notes
   Due to the fact that the preflight flag for CORS fails for some reason, I cannot successfully make the call to make sure the password has been reset. However, I am sure the service is called with the correct headers, using the correct attributes as when I am looking in the network tab for debugging, it is looking exactly like the call in POSTMAN where the call succeds.
   
 # How to run
@@ -10,6 +10,7 @@
  
 ## React
   Modern javascript frontend framework, I have fully made use of extremely useful libraries such as YUP for from validation, Fromik for painless forms, MATERIAL-UI for google best practices regaring Fluid design and most importantly hooks. This made development much easier and let me adhere to SOLID principles which I am strongly keen on following as these represent best practice nowadays.
+  The project is fully responsive.
 
 ## Monorepo with lerna and yarn worskpaces
   Monorepos are relatively new technogy when it comes to production, but I perfectioned my way of doing this over the last year. I consider they bring in considerable advantages, especially when thinking about how easy is to share different packages, without having to complicate things when using multiple packages (think about using a package in multiple projects and after that the need to update each project to the latest package version) or when we are to share DTOs between front-end and back-end as there is just a matter of importing.
