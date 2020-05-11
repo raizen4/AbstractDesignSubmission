@@ -1,6 +1,6 @@
 # abstractDesignSubmission- PLEASE READ
 
-#Notes
+# Notes
   Due to the fact that the preflight flag for CORS fails for some reason, I cannot successfully make the call to make sure the password has been reset. However, I am sure the service is called with the correct headers, using the correct attributes as when I am looking in the network tab for debugging, it is looking exactly like the call in POSTMAN where the call succeds.
   
 # How to run
