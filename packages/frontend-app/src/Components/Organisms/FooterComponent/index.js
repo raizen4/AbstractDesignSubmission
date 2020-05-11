@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
 
   footerItemStyleDesktop: {
     marginLeft: theme.spacing(8),
-    paddingBottom: "0",
+    paddingBottom: theme.spacing(0),
   },
 
   footerItemStyleMobile: {
     marginLeft: theme.spacing(2),
-    paddingBottom: "0",
+    paddingBottom: theme.spacing(0),
   },
   imageStyleDesktop: {
     margin: theme.spacing(2),
@@ -100,7 +100,7 @@ const Footer = () => {
           >
             <Toolbar>
               <Grid direction="row" alignItems="center" container>
-                <Grid justify="center" alignItems="center" item>
+                <Grid item>
                   <Button disableRipple edge="start" color="inherit">
                     <img
                       alt="Error loading"

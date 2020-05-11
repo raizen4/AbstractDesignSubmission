@@ -26,11 +26,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
     paddingBottom: "0",
   },
-  imageStyleDesktop: {
-    margin: theme.spacing(2),
-    width: "45px",
-    height: "50px",
-  },
+
   imageStyleMobile: {
     width: "45px",
     height: "50px",
@@ -129,7 +125,8 @@ const Header = () => {
         >
           <Toolbar>
             <Grid direction="row" alignItems="center" container>
-              <Grid justify="center" alignItems="center" item>
+              
+              <Grid  item>
                 <Button disableRipple edge="start" color="inherit">
                   <img
                     alt="Error loading"
