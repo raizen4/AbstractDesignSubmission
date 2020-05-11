@@ -165,6 +165,7 @@ const PasswordResetForm = () => {
                     value={values.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    type="password"
                     helperText={errors.newPassword ? errors.newPassword : null}
                     className={classes.whiteBorderStyle}
                     fullWidth
