@@ -2,18 +2,15 @@ import Axios from "axios";
 
 export const resetPassword = async (token, newPass) => {
   try {
-    const objectToBeSent = {
-      psw: newPass,
-    };
+    const data = { psw: newPass };
+    const params = new URLSearchParams();
+    params.append("psw", newPass);
 
-    const stringifiedData = JSON.stringify(objectToBeSent);
     const res = await Axios.post(
-      `https://www.abstractmrm.net/youin/api/password/${token}`,
+      `https://www.abstpswractmrm.net/youin/api/password/${token}`,
       stringifiedData,
       {
         headers: {
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/x-www-form-urlencoded",
         },
         auth: {
@@ -26,6 +23,6 @@ export const resetPassword = async (token, newPass) => {
     return res.status;
   } catch (error) {
     console.error(error);
-    throw new Error(`Unable to resetPassword`);
+    throw new Error(`Unable to reset Password`);
   }
 };
